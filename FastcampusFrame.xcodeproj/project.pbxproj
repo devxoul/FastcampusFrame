@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		034AEF211E8BCBD6001528E9 /* FastcampusFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 034AEF1F1E8BCBD6001528E9 /* FastcampusFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		034AEF281E8BCF91001528E9 /* FastcampusFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034AEF271E8BCF91001528E9 /* FastcampusFrame.swift */; };
+		034AEF301E8BD097001528E9 /* FastcampusFrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034AEF2F1E8BD097001528E9 /* FastcampusFrameTests.swift */; };
+		034AEF321E8BD097001528E9 /* FastcampusFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034AEF1C1E8BCBD6001528E9 /* FastcampusFrame.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		034AEF331E8BD098001528E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034AEF131E8BCBD6001528E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 034AEF1B1E8BCBD6001528E9;
+			remoteInfo = FastcampusFrame;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		034AEF1C1E8BCBD6001528E9 /* FastcampusFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastcampusFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		034AEF1F1E8BCBD6001528E9 /* FastcampusFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastcampusFrame.h; sourceTree = "<group>"; };
 		034AEF201E8BCBD6001528E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034AEF271E8BCF91001528E9 /* FastcampusFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FastcampusFrame.swift; sourceTree = "<group>"; };
+		034AEF2D1E8BD097001528E9 /* FastcampusFrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastcampusFrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		034AEF2F1E8BD097001528E9 /* FastcampusFrameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastcampusFrameTests.swift; sourceTree = "<group>"; };
+		034AEF311E8BD097001528E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		034AEF2A1E8BD097001528E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034AEF321E8BD097001528E9 /* FastcampusFrame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				034AEF1E1E8BCBD6001528E9 /* FastcampusFrame */,
+				034AEF2E1E8BD097001528E9 /* FastcampusFrameTests */,
 				034AEF1D1E8BCBD6001528E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				034AEF1C1E8BCBD6001528E9 /* FastcampusFrame.framework */,
+				034AEF2D1E8BD097001528E9 /* FastcampusFrameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -47,9 +74,19 @@
 			isa = PBXGroup;
 			children = (
 				034AEF1F1E8BCBD6001528E9 /* FastcampusFrame.h */,
+				034AEF271E8BCF91001528E9 /* FastcampusFrame.swift */,
 				034AEF201E8BCBD6001528E9 /* Info.plist */,
 			);
 			path = FastcampusFrame;
+			sourceTree = "<group>";
+		};
+		034AEF2E1E8BD097001528E9 /* FastcampusFrameTests */ = {
+			isa = PBXGroup;
+			children = (
+				034AEF2F1E8BD097001528E9 /* FastcampusFrameTests.swift */,
+				034AEF311E8BD097001528E9 /* Info.plist */,
+			);
+			path = FastcampusFrameTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +121,40 @@
 			productReference = 034AEF1C1E8BCBD6001528E9 /* FastcampusFrame.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		034AEF2C1E8BD097001528E9 /* FastcampusFrameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034AEF351E8BD098001528E9 /* Build configuration list for PBXNativeTarget "FastcampusFrameTests" */;
+			buildPhases = (
+				034AEF291E8BD097001528E9 /* Sources */,
+				034AEF2A1E8BD097001528E9 /* Frameworks */,
+				034AEF2B1E8BD097001528E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				034AEF341E8BD098001528E9 /* PBXTargetDependency */,
+			);
+			name = FastcampusFrameTests;
+			productName = FastcampusFrameTests;
+			productReference = 034AEF2D1E8BD097001528E9 /* FastcampusFrameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		034AEF131E8BCBD6001528E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Suyeol Jeon";
 				TargetAttributes = {
 					034AEF1B1E8BCBD6001528E9 = {
+						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					034AEF2C1E8BD097001528E9 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -112,12 +173,20 @@
 			projectRoot = "";
 			targets = (
 				034AEF1B1E8BCBD6001528E9 /* FastcampusFrame */,
+				034AEF2C1E8BD097001528E9 /* FastcampusFrameTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		034AEF1A1E8BCBD6001528E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034AEF2B1E8BD097001528E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,10 +200,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034AEF281E8BCF91001528E9 /* FastcampusFrame.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		034AEF291E8BD097001528E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034AEF301E8BD097001528E9 /* FastcampusFrameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		034AEF341E8BD098001528E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 034AEF1B1E8BCBD6001528E9 /* FastcampusFrame */;
+			targetProxy = 034AEF331E8BD098001528E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		034AEF221E8BCBD6001528E9 /* Debug */ = {
@@ -241,6 +327,27 @@
 		034AEF251E8BCBD6001528E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FastcampusFrame/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.xoul.FastcampusFrame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		034AEF261E8BCBD6001528E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -254,22 +361,26 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
-			name = Debug;
+			name = Release;
 		};
-		034AEF261E8BCBD6001528E9 /* Release */ = {
+		034AEF361E8BD098001528E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FastcampusFrame/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = FastcampusFrameTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kr.xoul.FastcampusFrame;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.xoul.FastcampusFrameTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		034AEF371E8BD098001528E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FastcampusFrameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.xoul.FastcampusFrameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -291,6 +402,14 @@
 			buildConfigurations = (
 				034AEF251E8BCBD6001528E9 /* Debug */,
 				034AEF261E8BCBD6001528E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		034AEF351E8BD098001528E9 /* Build configuration list for PBXNativeTarget "FastcampusFrameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034AEF361E8BD098001528E9 /* Debug */,
+				034AEF371E8BD098001528E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
